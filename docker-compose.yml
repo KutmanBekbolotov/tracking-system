@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  backend:
+    build: .
+    ports:
+      - "1200:1200"
+    environment:
+      - PORT=1200
+    volumes:
+      - .:/app
+      - /app/node_modules
